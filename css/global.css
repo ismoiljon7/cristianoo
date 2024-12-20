@@ -1,0 +1,137 @@
+@import "./normalize.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v28-cyrillic_latin-regular.woff2") format("woff2");
+}
+/* rubik-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v28-cyrillic_latin-500.woff2") format("woff2");
+}
+/* rubik-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-v28-cyrillic_latin-700.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: groove;
+  outline-offset: 3px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: blue;
+  font-weight: 500;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  max-width: 384px;
+  background-color: #1f1f1f;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  margin-top: 175px;
+}
+
+.cristiano__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.cristiano__image {
+  border-radius: 50%;
+}
+.cristiano__bio {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.bio__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.bio__address {
+  color: #c4f82a;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.cristiano__who {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.club__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.club__item {
+  background-color: #333333;
+  padding-top: 12px 30px 12px 30px;
+}
+.club__link:hover {
+  color: #c4f82a;
+}
+.club__link:active {
+  opacity: 0.6;
+}
